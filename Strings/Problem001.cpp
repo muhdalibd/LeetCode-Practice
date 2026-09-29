@@ -1,9 +1,15 @@
 #include <iostream>
 using namespace std;
 
-/*
-    [3110. Score of a String](https://leetcode.com/problems/score-of-a-string/description/?envType=problem-list-v2&envId=0e4v2epd)
-*/
+/******************************************************************************
+ *  3110. Score of a String
+ *  https://leetcode.com/problems/score-of-a-string/
+ *
+ *  Difficulty : Easy
+ *  Topics     : String
+ *  Input      : s = "hello"      Output: 13
+ *  Input      : s = "zaz"        Output: 50
+ ******************************************************************************/
 
 int scoreOfString(string s) {
     int sum = 0;
