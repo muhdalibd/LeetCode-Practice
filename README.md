@@ -1,1 +1,1 @@
-## Practing Problems in LeetCode
+## Practing DSA Problems in LeetCode
