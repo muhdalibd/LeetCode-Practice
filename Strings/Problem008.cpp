@@ -2,16 +2,46 @@
 using namespace std;
 
 /******************************************************************************
- *  Problem Number. Title
+ *  20. Valid Parentheses
  *  URL
  *
  *  Difficulty : Easy
- *  Topics     : Topic
- *  Input      : example in      Output: example out
+ *  Topics     : Stack, String
+ *  Input      : "()[]{}"            Output: true
+ *  Input      : "([])[()]{()}"      Output: true
+ *  Input      : "()[{(}]{}"         Output: false
+ *  Input      : "()[{(()}]{{{}"     Output: false
  ******************************************************************************/
 
+bool isValid(string str){
+    stack<char> st;
+    for(char ch : str) {
+        if(ch == '(' || ch == '{' || ch == '['){
+            st.push(ch);
+        }
+        else{
+            if(st.empty()){
+                return false;
+            }
+            char top = st.top();
+            if(top == '(' && ch == ')' ||
+               top == '{' && ch == '}' ||
+               top == '[' && ch == ']'
+            ){
+                st.pop();
+            }
+            else {
+                return false;
+            }
+        }
+    }
+    return st.empty();
+}
 
 int main(){
-    
+    string str = "([])[()]{()}";
+    cout << isValid(str) << endl;
+
+    cout << isValid("()[{(()}]{{{}") << endl;
     return 0;
 }
