@@ -38,7 +38,6 @@ int main(){
     cout << isPalindrome(str) << endl;
 
     cout << isPalindrome(" ") << endl;
-
     cout << isPalindrome("race a car") << endl;
     return 0;
 }

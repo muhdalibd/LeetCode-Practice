@@ -26,5 +26,6 @@ int main(){
     cout << scoreOfString(str) << endl;
 
     cout << scoreOfString("zaz") << endl;
+    cout << scoreOfString("jazz") << endl;
     return 0;
 }

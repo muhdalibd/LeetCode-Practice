@@ -45,5 +45,6 @@ int main(){
     cout << reverseVowels(str) << endl;
     
     cout << reverseVowels("leetcode") << endl;
+    cout << reverseVowels("muhdalibd") << endl;
     return 0;
 }

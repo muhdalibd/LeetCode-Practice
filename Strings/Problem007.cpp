@@ -38,5 +38,7 @@ int main(){
     cout << validPalindrome(str) << endl;
 
     cout << validPalindrome("abcda") << endl;
+
+    cout << validPalindrome("jfjfg") << endl;
     return 0;
 }

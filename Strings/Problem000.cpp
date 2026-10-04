@@ -38,5 +38,6 @@ int main(){
     cout << checkValidString(str) << endl;
 
     cout << checkValidString("(**(") << endl;
+    cout << checkValidString("(**(*") << endl;
     return 0;
 }

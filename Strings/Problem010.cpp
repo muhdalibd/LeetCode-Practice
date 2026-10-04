@@ -34,5 +34,6 @@ int main(){
     cout << countSubstrings(str) << endl;
 
     cout << countSubstrings("ababc") << endl;
+    cout << countSubstrings("ababa") << endl;
     return 0;
 }

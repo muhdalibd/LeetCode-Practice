@@ -43,5 +43,7 @@ int main(){
     cout << isValid(str) << endl;
 
     cout << isValid("()[{(()}]{{{}") << endl;
+
+    cout << isValid("([])[()]{()}") << endl;
     return 0;
 }

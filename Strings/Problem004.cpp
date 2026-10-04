@@ -31,5 +31,8 @@ int main(){
 
     vector<string> op2{"++X", "++X", "X++"};
     cout << finalValueAfterOperations(op2) << endl;
+
+    vector<string> op3{"++X", "++X", "X++", "--X", "X--"};
+    cout << finalValueAfterOperations(op3) << endl;
     return 0;
 }

@@ -20,13 +20,25 @@ void reverseString(vector<char>& s){
         j --;
     }
 }
+void print(vector<char>& s1);
 
 int main(){
-    vector<char> str {'h','a','n','n','a','h'};
+    vector<char> s1 {'h','a','n','n','a','h'};
 
-    reverseString(str);
-    for(int i=0; i<str.size(); i++){
-        cout << str[i] <<" ";
-    }
+    reverseString(s1);
+    print(s1);
+
+    vector<char> s2 {'r','a','c','e','c','a', 'r'};
+
+    reverseString(s2);
+    print(s2);
     return 0;
+}
+
+
+void print(vector<char>& s1){
+    for(int i=0; i<s1.size(); i++){
+        cout << s1[i] <<" ";
+    }
+    cout << endl;
 }

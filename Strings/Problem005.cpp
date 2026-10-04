@@ -35,6 +35,8 @@ int main(){
     string str = "G()()()()(al)";
     cout << interpret(str) << endl;
 
+    cout << interpret("G()()()()(al)") << endl;
+
     cout << interpret("(al)G(al)()()G") << endl;
     return 0;
 }
